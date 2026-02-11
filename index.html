@@ -1,19 +1,31 @@
-<div id="story-container">
-  <h1>Foxy's Game Day</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foxy's Game Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <img id="foxy-img" src="YOUR-FOXY-IMAGE.jpg" alt="Foxy">
+  <div id="story-container">
+    <h1>Foxy's Game Day</h1>
 
-  <!-- Dialogue bubble -->
-  <div id="bubble">Hi there! Help me pick a game!</div>
+    <img id="foxy-img" src="foxy.jpg" alt="Foxy">
 
-  <p id="story-text">
-    Foxy finally has a day off work! She wants to play a game today…
-    but she can’t decide which one!
-  </p>
+    <!-- Dialogue bubble -->
+    <div id="bubble">Hi there! Help me pick a game!</div>
 
-  <div id="choices">
-    <button onclick="chooseGame('tic')">Tic‑Tac‑Toe</button>
-    <button onclick="chooseGame('checkers')">Checkers</button>
-    <button onclick="chooseGame('cards')">Cards</button>
+    <p id="story-text">
+      Foxy finally has a day off work! She wants to play a game today…
+      but she can’t decide which one!
+    </p>
+
+    <div id="choices">
+      <button onclick="chooseGame('tic')">Tic‑Tac‑Toe</button>
+      <button onclick="chooseGame('checkers')">Checkers</button>
+      <button onclick="chooseGame('cards')">Cards</button>
+    </div>
   </div>
-</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

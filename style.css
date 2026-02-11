@@ -1,49 +1,45 @@
+/* ===== Page Background ===== */
 body {
   font-family: "Comic Sans MS", Comic Sans, cursive;
-  background:/* Using HEX code */
-maroon {
-   color: #800000; /* Maroon */
-}
-/* Using RGB */
-maroon-rgb {
-   color: rgb(128, 0, 0); /* Maroon */
-} ;
+  background: linear-gradient(135deg, #800000, #C99700);
   color: white;
   text-align: center;
   padding: 20px;
 }
 
+/* ===== Main Story Card ===== */
 #story-container {
   max-width: 700px;
   margin: auto;
-  background: rgba(255,255,255,0.85);
-  border: 3px solid black;
+  background: #F5F5F5;
+  color: black;
+  border: 4px solid #800000;
   border-radius: 15px;
   padding: 20px;
 }
 
+/* ===== Foxy Image ===== */
 #foxy-img {
   width: 250px;
   border-radius: 15px;
-  border: 3px solid black;
+  border: 3px solid #800000;
   margin-bottom: 20px;
 }
 
-/* Dialogue bubble */
+/* ===== Dialogue Bubble ===== */
 #bubble {
   display: inline-block;
   max-width: 70%;
-  background: #ffffff;
-  border: 3px solid black;
+  background: white;
+  border: 3px solid #800000;
   border-radius: 20px;
   padding: 15px;
   margin-bottom: 20px;
-  font-family: "Comic Sans MS";
   font-size: 18px;
   position: relative;
 }
 
-/* Bubble tail */
+/* Bubble tail outline */
 #bubble::after {
   content: "";
   position: absolute;
@@ -53,9 +49,10 @@ maroon-rgb {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 20px solid black;
+  border-top: 20px solid #800000;
 }
 
+/* Bubble tail fill */
 #bubble::before {
   content: "";
   position: absolute;
@@ -68,75 +65,16 @@ maroon-rgb {
   border-top: 18px solid white;
 }
 
+/* ===== Buttons ===== */
 button {
-  font-family: "Comic Sans MS";
-  padding: 12px 20px;
+  font-family: "Comic Sans MS", Comic Sans, cursive;
+  padding: 12px 24px;
   margin: 10px;
-  border-radius: 10px;
-  border: 2px solid black;
+  border-radius: 12px;
+  border: 2px solid #800000;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
+  color: black;
   background: linear-gradient(
-    45deg,
-    #00ffcc,
-    #ff66cc,
-    #66aaff,
-    #ffee55
-  );
-}
-
-
-button {
-  font-family: "Comic Sans MS bold";
-  padding: 12px 20px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid black;
-  cursor: pointer;
-  font-size: 25px;
-  background: linear-gradient(
-    45deg,
-    #00ffcc,
-    #ff66cc,
-    #66aaff,
-    #ffee55
-    
-/* Dialogue bubble */
-#bubble {
-  display: inline-block;
-  max-width: 70%;
-  background: #ffffff;
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 15px;
-  margin-bottom: 20px;
-  font-family: "Comic Sans MS";
-  font-size: 18px;
-  position: relative;
-}
-
-/* Bubble tail */
-#bubble::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 40px;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 20px solid black;
-}
-
-#bubble::before {
-  content: "";
-  position: absolute;
-  bottom: -17px;
-  left: 42px;
-  width: 0;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  border-top: 18px solid white;
-}
+    4
 

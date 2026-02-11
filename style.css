@@ -1,23 +1,32 @@
 /* ===== Page Background ===== */
 body {
   font-family: "Comic Sans MS", Comic Sans, cursive;
-  /* Beautiful UM Maroon to Deep Grey/Silver gradient */
-  background: linear-gradient(135deg, #660033, #333333); 
+  
+  background: linear-gradient(135deg, #660033, #333333);
   color: white;
   text-align: center;
   padding: 20px;
+  margin: 0;
   min-height: 100vh;
+  
+  /* NEW: Use Flexbox to help center and move content up */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===== Main Story Card ===== */
 #story-container {
   max-width: 700px;
-  margin: auto;
   background: #F5F5F5;
   color: #333333;
   border: 4px solid #660033; /* UM Maroon */
   border-radius: 15px;
   padding: 20px;
+  
+  /* UPDATED: Removed 'margin: auto' and added negative margin to pull the box UP */
+  margin-top: -80px; 
 }
 
 /* ===== Foxy Image ===== */
@@ -36,7 +45,7 @@ body {
   border: 3px solid #919496; /* UM Silver */
   border-radius: 20px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased margin to push it further up from Foxy */
   font-size: 18px;
   position: relative;
 }

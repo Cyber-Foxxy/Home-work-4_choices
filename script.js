@@ -57,8 +57,3 @@ function restart() {
     '<button onclick="chooseGame(\'checkers\')">Checkers</button>' +
     '<button onclick="chooseGame(\'cards\')">Cards</button>';
 }
-
-    '<button onclick="chooseGame(\'tic\')">Tic‑Tac‑Toe</button>' +
-    '<button onclick="chooseGame(\'checkers\')">Checkers</button>' +
-    '<button onclick="chooseGame(\'cards\')">Cards</button>';
-}

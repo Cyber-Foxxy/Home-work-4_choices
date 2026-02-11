@@ -36,5 +36,43 @@ button {
     #ff66cc,
     #66aaff,
     #ffee55
-  );
+    
+/* Dialogue bubble */
+#bubble {
+  display: inline-block;
+  max-width: 70%;
+  background: #ffffff;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS";
+  font-size: 18px;
+  position: relative;
 }
+
+/* Bubble tail */
+#bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid black;
+}
+
+#bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 42px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 18px solid white;
+}
+

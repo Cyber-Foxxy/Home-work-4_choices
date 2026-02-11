@@ -1,14 +1,14 @@
 let chosenGame = "";
 
 // Update Foxy's speech bubble
-function updateBubble(text) {
-  document.getElementById("bubble").innerHTML = text;
+function updateBubble(Yeah, that sounds fun! lets play!) {
+  document.getElementById("bubble").innerHTML = lets play!;
 }
 
 function chooseGame(game) {
   chosenGame = game;
 
-  let storyText = document.getElementById("story-text");
+  let storyText = document.getElementById("Lets help Foxy on her day off! Foxy is working hard in college to achive her goals, but today she finally has some time off from her busy schedual, and wants to play a game with you :) ");
   let choices = document.getElementById("choices");
 
   if (game === "tic") {

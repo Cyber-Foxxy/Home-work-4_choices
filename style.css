@@ -1,7 +1,7 @@
 body {
   font-family: "Comic Sans MS", Comic Sans, cursive;
-  background: white;
-  color: black;
+  background: canvas tan;
+  color: cream;
   text-align: center;
   padding: 20px;
 }
@@ -80,13 +80,13 @@ button {
 
 
 button {
-  font-family: "Comic Sans MS";
+  font-family: "Comic Sans MS bold";
   padding: 12px 20px;
   margin: 10px;
   border-radius: 10px;
   border: 2px solid black;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 25px;
   background: linear-gradient(
     45deg,
     #00ffcc,

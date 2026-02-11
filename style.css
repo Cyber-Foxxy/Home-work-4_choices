@@ -1,7 +1,14 @@
 body {
   font-family: "Comic Sans MS", Comic Sans, cursive;
-  background: maroon;
-  color: cream;
+  background:/* Using HEX code */
+maroon {
+   color: #800000; /* Maroon */
+}
+/* Using RGB */
+maroon-rgb {
+   color: rgb(128, 0, 0); /* Maroon */
+} ;
+  color: white;
   text-align: center;
   padding: 20px;
 }
